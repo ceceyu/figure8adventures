@@ -1,0 +1,23 @@
+<script>
+	/*OPEN EMAIL MODAL*/
+	$(document).ready(function() {
+		$('#open-mailing-list-modal').click(function(){
+			console.log("opening");
+	    	$( '#mailing-list-modal' ).addClass( 'modal-visible' );
+		});
+		$("#close-mailing-list-modal").click(function(){
+	    	$( '#mailing-list-modal' ).removeClass( 'modal-visible' );
+		});
+	});
+</script>
+
+<ul class="left-nav">
+	<li><a href="index.html">FIGURE EIGHT</a></li>
+	<li><a href="the-red.html">Red River Gorge 2017</a></li>
+	<li><a href="faq.html">Trip FAQ</a></li>
+</ul>
+<ul class="right-nav">
+	<li><a href="philosophy.html">Philosophy</a></li>
+	<li><a href="our-team.html">Our Team</a></li>
+	<li><a id="open-mailing-list-modal">Join The Mailing List</a></li>
+</ul>

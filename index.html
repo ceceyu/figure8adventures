@@ -1,0 +1,137 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="scripts/jquery-3.1.1.min.js"></script>
+<script>
+
+/*INCLUDE NAV*/
+$(document).ready(function(){
+	$(function(){
+	  $("#includeNav").load("includes/site-nav.html");
+	  $("#include-mailing-list-modal").load("includes/mailing-list-modal.html"); 
+	});
+});
+
+/*STICKY WHITE HEADER*/
+$(document).ready(function() {
+
+  $(window).scroll(function () { 
+
+    console.log($(window).scrollTop());
+
+    if ($(window).scrollTop() > 400) {
+      $('#site-nav').addClass('site-nav-fixed-white');
+    }
+
+    if ($(window).scrollTop() < 401) {
+      $('#site-nav').removeClass('site-nav-fixed-white');
+    }
+  });
+});
+
+</script>
+</head>
+<title>Figure Eight</title>
+
+
+<body>
+
+<div id="include-mailing-list-modal"></div>
+
+<div class="hero-section landing-hero-section">	
+	<div id="site-nav" class="site-nav">
+		<div id="includeNav"></div>
+	</div>
+	<div class="hero-message-container">
+		<h1 class="display-text-x">The best way to do outdoor<br/>climbing trips.</h1>
+		<a class="big-button" href="the-red.html">Currently Exploring: Red River Gorge</a>
+	</div>
+</div>
+
+<div class="landing-section">
+	<h3 class="heading-text">Built For The Modern Climber</h3>
+	<p class="body-text-x">Figure Eight organizes trips to the best climbing locations in the world. Guided by 24/7 staff, our trips provide technical expertise, beautiful lodging, and hearty meals, so you and your friends can focus on adventure. Five percent of all our proceeds go to climbing foundations such as <a href="#">The Access Fund</a> and <a href="#">Friends of Muir Valley</a>.</p>
+</div>
+
+<div class="landing-section benefits-section">
+	<div class="product-benefit benefit-padded benefit-itinerary">
+		<div class="benefit-title">Unexpected Itineraries</div>
+		<div class="benefit-paragraph">
+			<p>From deep water solos at The New to the stellar heights of Potrero Chico, we'll guide you to areas that are difficult to experience efficiently on your own. Our staff will hand-pick the best classics and hidden gems for you based on your interest and skill level.</p>
+		</div>
+	</div>
+	<div class="product-benefit benefit-food">
+		<div class="benefit-title">Loaded Accommodations</div>
+		<div class="benefit-paragraph">
+			<p>Our cabins offer comfortable beds, beautiful views, and pristine bathroom amenities so you can relax at the end of the day. We stock the kitchen for breakfast and lunch and explore local hotspots together for dinner.</p>
+		</div>
+	</div>
+	<div class="product-benefit benefit-padded benefit-groups">
+		<div class="benefit-title">Dynamic Groups</div>
+		<div class="benefit-paragraph">
+			<p>Whether you join solo or book with a group, you'll be climbing with a tight-knit cohort of 8-12 people who share a passion for climbing and having a good time. </p>
+		</div>
+	</div>
+	<div class="product-benefit benefit-support">
+		<div class="benefit-title">24/7 Support</div>
+		<div class="benefit-paragraph">
+			<p>Unlike traditional climbing guides who leave you at sundown, our knowledgable and friendly staff supports the group all day and night with plan changes, local recs, and troubleshooting.</p>
+		</div>
+	</div>
+	<div class="product-benefit benefit-padded benefit-skills">
+		<div class="benefit-title">Skills-Building</div>
+		<div class="benefit-paragraph">
+			<p>We believe learning and climbing go hand-in-hand. Build your knowledge of anchor-building, sport leading, or trad protection in a safe environment. Our trips are best-suited for climbers who can lead at least 5.9 indoors, but beginners are welcome, too!</p>
+		</div>
+	</div>
+	<div class="product-benefit benefit-fun">
+		<div class="benefit-title">Fun Extras</div>
+		<div class="benefit-paragraph">
+			<p>Each trip is accompanied by a guy with a camera, so you'll come away with some cool shots (yup, we took all the ones on this website). We like playing with drones, too.</p>
+		</div>
+	</div>
+</div>
+
+<div class="landing-section">
+	<h3 class="heading-text">A Lasting Network</h3>
+	<p class="body-text-x">We focus on making outdoor climbing and adventure more accessible, convenient, and exciting for anyone, but especially people who grew up as climbers in the gym. When you climb with Figure Eight, you gain a lasting network of explorers like you, constantly pushing their comfort zones. We hope you'll keep coming back to explore new crags with us.</p>
+	<h5 class="heading-text">Follow Us</h5>
+	<p class="caption-text-x"><a href="http://instagram.com/figure8adventure">instagram.com/figure8adventure</a></p>
+</div>
+
+<div class="photo-grid">
+	<div class="photo-grid-left">
+		<div class="photo-grid-item photo-grid-1">
+			<p class="caption-text">Red River Gorge, KY</p>
+		</div>
+	</div>
+	<div class="photo-grid-right">
+		
+		<div class="photo-grid-right-top">
+			<div class="photo-grid-item photo-grid-2">
+				<p class="caption-text">Potrero Chico, Mexico</p>
+			</div>
+			<div class="photo-grid-item photo-grid-3">
+				<p class="caption-text">New River Gorge, KY</p>
+			</div>
+		</div>
+		<div class="photo-grid-right-bottom">
+			<div class="photo-grid-item photo-grid-4">
+				<p class="caption-text">New River Gorge, KY</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="landing-section">
+	<a class="big-button" href="the-red.html">Book An Adventure</a>
+</div>
+
+<div class="footer-love">
+	<p>This site was built with love by the Figure Eight tech team</p>
+	<p class="copyright">&#169; Copyright 2017</p>
+</div>
+
+</body>
+
+</html>

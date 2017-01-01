@@ -1,0 +1,473 @@
+/*FONTS*/
+@font-face {
+  font-family: 'Calibre';
+  src: url("fonts/calibre-light-webfont.ttf");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Calibre';
+  src: url("fonts/calibre-regular-webfont.ttf");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Calibre';
+  src: url("fonts/calibre-semibold-webfont.ttf");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Sentinel';
+  src: url("fonts/Sentinel-Book.otf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Sentinel';
+  src: url("fonts/Sentinel-BookItal.otf");
+  font-weight: normal;
+  font-style: italic; }
+
+/*COLORS*/
+/*FONT COLORS*/
+/*FONT SIZES*/
+/*14/16*/
+/*18/16*/
+/*20/16*/
+/*24/16*/
+/*48/16*/
+/*72/16*/
+/*FONT-STACKS*/
+/*RESET STYLES*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1.45em;
+  font-size: 16px;
+  font-family: "Calibre", Helvetica, Arial, sans-serif;
+  color: rgba(11, 24, 58, 0.8); }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none; }
+
+a {
+  text-decoration: none;
+  color: #D9482D;
+  transition: .2s;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px; }
+
+a:hover {
+  cursor: pointer;
+  color: #E79046;
+  border-bottom: 1px solid #E79046;
+  padding-bottom: 0px; }
+
+hr {
+  border-style: none;
+  border-bottom: 1px solid rgba(11, 24, 58, 0.1);
+  margin: 2.5em 0; }
+
+/*MIXINS*/
+/*BRAND STYLES*/
+.display-text-x {
+  font-size: 4.5em;
+  font-weight: 600;
+  line-height: 1em;
+  color: #fff; }
+
+.display-text {
+  font-size: 3em;
+  color: #D9482D;
+  font-weight: 400; }
+
+.heading-text-x {
+  font-size: 1.625em;
+  font-weight: 600;
+  color: rgba(11, 24, 58, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 1.5;
+  margin-bottom: 1em; }
+
+.body-text-x {
+  font-size: 1.625em;
+  font-weight: 300;
+  line-height: 1.5em;
+  margin-bottom: 2em;
+  color: rgba(11, 24, 58, 0.8); }
+
+.heading-text {
+  font-size: 1.25em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5;
+  margin-bottom: .5em;
+  color: rgba(11, 24, 58, 0.8); }
+
+.caption-text-x {
+  font-family: "Sentinel", Georgia, Times, serif;
+  font-size: 1.25em;
+  font-style: italic;
+  color: rgba(11, 24, 58, 0.4); }
+
+.body-text {
+  font-size: 1.25em;
+  line-height: 1.5em;
+  color: rgba(11, 24, 58, 0.8); }
+
+.caption-text {
+  font-size: 0.875em;
+  font-family: "Sentinel", Georgia, Times, serif;
+  font-color: rgba(11, 24, 58, 0.4);
+  font-style: italic; }
+
+/*BUTTONS and INPUTS*/
+.big-button {
+  font-size: 1.125em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5;
+  margin-bottom: .5em;
+  color: #fff;
+  background: #E79046;
+  padding: 20px 30px;
+  -webkit-border-radius: 36px;
+  -moz-border-radius: 36px;
+  -ms-border-radius: 36px;
+  border-radius: 36px;
+  transition: 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  border: none;
+  position: relative;
+  top: 3px; }
+  .big-button:hover {
+    padding: 20px 30px;
+    color: #fff;
+    border: none;
+    top: 0px;
+    cursor: pointer; }
+
+.small-button {
+  font-size: 0.875em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5;
+  color: #fff;
+  background: #E79046;
+  padding: 16px 20px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  border-radius: 30px;
+  transition: 0.1s cubic-bezier(0.23, 1, 0.32, 1);
+  border: none; }
+  .small-button:hover {
+    background: #dd751d;
+    cursor: pointer; }
+
+.form-field {
+  background: transparent;
+  font-family: "Calibre", Helvetica, Arial, sans-serif;
+  font-size: 1.25em;
+  padding: 12px 12px;
+  border: none;
+  border-bottom: 1px solid rgba(11, 24, 58, 0.15);
+  color: #0B183A;
+  transition: .2s; }
+  .form-field:focus {
+    border: none;
+    border-bottom: 1px solid #E79046; }
+
+/*HERO AND NAV */
+.hero-section {
+  text-align: center;
+  background-image: url(images/rrg-landing-hero-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  color: #fff; }
+
+.site-nav {
+  padding: 36px 48px 24px;
+  height: 20px;
+  overflow: hidden;
+  font-weight: 600; }
+  .site-nav.site-nav-fixed-white {
+    background: #fff;
+    position: fixed;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.31);
+    top: 0;
+    z-index: 1000;
+    width: 93%;
+    padding: 24px 48px; }
+    .site-nav.site-nav-fixed-white li a {
+      color: #0B183A; }
+  .site-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    .site-nav ul li {
+      display: inline; }
+      .site-nav ul li a {
+        color: #fff;
+        padding-bottom: 20px;
+        border-bottom: 1px solid transparent;
+        transition: .3s; }
+      .site-nav ul li a:hover {
+        padding-bottom: 6px;
+        border-bottom: 1px solid #E79046; }
+  .site-nav ul.left-nav {
+    float: left; }
+    .site-nav ul.left-nav li {
+      margin-right: 30px; }
+  .site-nav ul.right-nav {
+    float: right; }
+    .site-nav ul.right-nav li {
+      margin-left: 30px; }
+
+.faq-hero-section {
+  height: 250px; }
+  .faq-hero-section .hero-message-container {
+    width: 100%;
+    float: left; }
+  .faq-hero-section h1 {
+    margin: .5em 0; }
+
+.landing-hero-section {
+  height: 538px; }
+  .landing-hero-section .hero-message-container {
+    width: 100%;
+    float: left; }
+  .landing-hero-section h1 {
+    margin: 1em 0; }
+
+/*LANDING STYLES*/
+.landing-section {
+  width: 90%;
+  max-width: 900px;
+  margin: 96px auto;
+  text-align: center; }
+
+.benefits-section {
+  max-width: 1044px; }
+  .benefits-section:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.product-benefit {
+  min-width: 300px;
+  width: 48%;
+  height: 285px;
+  background-size: 510px auto;
+  margin-bottom: .5em;
+  float: left;
+  margin-bottom: 24px;
+  text-align: center;
+  display: table;
+  overflow: hidden; }
+  .product-benefit.benefit-itinerary {
+    background-image: url(images/itineraries-bg.jpg); }
+  .product-benefit.benefit-food {
+    background-image: url(images/food-bg.jpg); }
+  .product-benefit.benefit-groups {
+    background-image: url(images/group-dynamic-bg.jpg); }
+  .product-benefit.benefit-support {
+    background-image: url(images/support-bg.jpg); }
+  .product-benefit.benefit-skills {
+    background-image: url(images/skills-bg.jpg); }
+  .product-benefit.benefit-fun {
+    background-image: url(images/fun-bg.jpg); }
+  .product-benefit.benefit-padded {
+    margin-right: 4%; }
+  .product-benefit .benefit-title {
+    font-size: 1.25em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5;
+    color: #fff;
+    line-height: 290px;
+    opacity: 1;
+    transition: .6s;
+    position: absolute;
+    width: 510px;
+    display: table-cell;
+    vertical-align: middle; }
+  .product-benefit .benefit-paragraph {
+    width: 510px;
+    height: 285px;
+    background-color: rgba(231, 144, 70, 0.6);
+    opacity: 0;
+    transition: 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    color: #fff;
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 1.4em;
+    padding: 50px 50px 0px;
+    transition: .6s;
+    display: table-cell;
+    vertical-align: middle; }
+
+.product-benefit:hover .benefit-title {
+  opacity: 0;
+  line-height: 200px; }
+
+.product-benefit:hover .benefit-paragraph {
+  opacity: 1;
+  padding: 0px 50px; }
+
+.photo-grid {
+  width: 100%;
+  height: 826px; }
+  .photo-grid .photo-grid-item {
+    display: table;
+    width: 100%; }
+    .photo-grid .photo-grid-item p {
+      color: rgba(255, 255, 255, 0.7);
+      padding: 12px;
+      display: table-cell;
+      vertical-align: bottom; }
+  .photo-grid .photo-grid-left {
+    float: left;
+    width: 50%; }
+    .photo-grid .photo-grid-left .photo-grid-1 {
+      background-image: url(images/featured-rrg.jpg);
+      background-size: cover;
+      height: 100%; }
+  .photo-grid .photo-grid-right {
+    float: right;
+    width: 50%; }
+    .photo-grid .photo-grid-right .photo-grid-right-top {
+      height: 50%;
+      width: 100%; }
+      .photo-grid .photo-grid-right .photo-grid-right-top .photo-grid-2 {
+        background-image: url(images/featured-potrero.jpg);
+        background-size: cover;
+        height: 100%;
+        width: 50%;
+        float: left; }
+      .photo-grid .photo-grid-right .photo-grid-right-top .photo-grid-3 {
+        background-image: url(images/featured-nrg-2.jpg);
+        background-size: cover;
+        height: 100%;
+        width: 50%;
+        float: right; }
+    .photo-grid .photo-grid-right .photo-grid-right-bottom {
+      height: 50%;
+      width: 100%; }
+      .photo-grid .photo-grid-right .photo-grid-right-bottom .photo-grid-4 {
+        background-image: url(images/featured-nrg.jpg);
+        background-size: cover;
+        height: 100%; }
+
+/*FAQ*/
+.faq-question {
+  border-bottom: 1px solid rgba(11, 24, 58, 0.15);
+  padding: 1.5em 0; }
+  .faq-question h4 {
+    font-size: 1.625em;
+    line-height: 1.4em;
+    cursor: pointer; }
+  .faq-question h4:hover {
+    color: #E79046; }
+  .faq-question p {
+    font-size: 1.25em;
+    color: rgba(11, 24, 58, 0.7);
+    line-height: 1.4em;
+    margin: .5em 0; }
+
+/*ITINERARY*/
+.itinerary-container .heading-text {
+  font-size: 1em;
+  margin-bottom: 1.5em; }
+
+/*COMMON*/
+.page-container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 3em auto; }
+  .page-container p {
+    font-size: 1.25em;
+    line-height: 1.4em;
+    margin-bottom: 1em; }
+
+.footer-love {
+  padding: 0em 0em 3em;
+  text-align: center;
+  color: rgba(11, 24, 58, 0.4);
+  font-size: 1.125em; }
+  .footer-love .copyright {
+    font-size: 0.875em;
+    margin-top: .5em;
+    color: rgba(11, 24, 58, 0.25); }
+
+.modal-container-overlay {
+  position: fixed;
+  display: table;
+  top: 100%;
+  z-index: 3000;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.98);
+  opacity: 0;
+  transition: .5s; }
+  .modal-container-overlay.modal-visible {
+    opacity: 1;
+    top: 0; }
+  .modal-container-overlay .modal-x {
+    position: fixed;
+    top: 1.75em;
+    right: 1.75em;
+    font-size: 1.625em;
+    cursor: pointer; }
+  .modal-container-overlay .modal-box {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0px auto;
+    text-align: center; }
+    .modal-container-overlay .modal-box input {
+      display: block;
+      margin: 1em auto;
+      text-align: center; }
